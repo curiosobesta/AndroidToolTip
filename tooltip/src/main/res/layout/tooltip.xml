@@ -1,0 +1,61 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/tooltip_frame"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_up"
+        android:layout_width="@dimen/arrow"
+        android:layout_height="@dimen/arrow"
+        android:layout_gravity="center_horizontal"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:src="@drawable/triangle_up" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_topframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/container_padding"
+        android:background="@drawable/top_frame" />
+
+    <FrameLayout
+        android:id="@+id/tooltip_contentholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingLeft="@dimen/container_padding"
+        android:paddingRight="@dimen/container_padding"
+        android:scrollbars="none">
+
+        <TextView
+            android:id="@+id/tooltip_text"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:maxWidth="150dp"
+            android:text="Hello this is sagar pawar student of ramdeobaba college of engineering and management"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/tooltip_bottomframe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/container_padding"
+        android:background="@drawable/bottom_frame" />
+
+    <ImageView
+        android:id="@+id/tooltip_pointer_down"
+        android:layout_width="@dimen/arrow"
+        android:layout_height="@dimen/arrow"
+        android:src="@drawable/triangle_down" />
+
+
+</LinearLayout>
